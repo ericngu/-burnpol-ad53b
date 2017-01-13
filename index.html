@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #map {
+       height: 600px;
+       width: 100%;
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+  <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDScRGSKjYo2CKiqIaKrHZUpd7SzzrSLXg",
+    authDomain: "burnpol-ad53b.firebaseapp.com",
+    databaseURL: "https://burnpol-ad53b.firebaseio.com",
+    storageBucket: "",
+    messagingSenderId: "860567279843"
+  };
+  firebase.initializeApp(config);
+  </script>
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <title>BurnPol</title>
+</head>
+<body>
+
+  <!-- Location -->
+  <p style="font-size:48px ; font-family:Helvetica,Calibri,sans-serif">Mark your location:</p>
+  <div id="map"></div>
+  <script>
+    function initMap() {
+      var BSB = {lat: 4.8895, lng: 114.94175};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 18,
+        center: BSB
+      });
+      var marker = new google.maps.Marker({
+        position: BSB,
+        map: map
+      });
+    }
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdUg4R8zM6EhsAta1XhNE8jzthSZSrIX0&callback=initMap"></script>
+  <script type="text/javascript" src="buttons.js"></script>
+  <section class="container">
+    <div id="buttons">
+    <a href="thankyou.html" class="btn red">Mark open burning</a>
+  </section>
+  <!-- Place this tag where you want the button to render. -->
+  <a class="github-button" href="https://github.com/ntkme/github-buttons/fork" aria-label="Fork ntkme/github-buttons on GitHub">Fork me on Github!</a>
+</body>
+</html>
