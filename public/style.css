@@ -1,10 +1,9 @@
 /* Google Fonts */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 /* set global font to Open Sans */
 body {
   font-family: 'Open Sans', 'sans-serif';
-  background-image: url(http://benague.ca/files/pw_pattern.png);
 }
 
 /* header */
@@ -22,7 +21,6 @@ h1 {
   -webkit-transition: .3s;
   -moz-transition: .3s;
   -o-transition: .3s;
-  cursor: url(http://cur.cursors-4u.net/symbols/sym-1/sym46.cur), auto;
 }
 
 .link:hover {
